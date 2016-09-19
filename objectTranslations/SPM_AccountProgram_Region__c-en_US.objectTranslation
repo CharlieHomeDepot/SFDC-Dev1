@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Program Region Coverage</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Program Region Coverage</value>
+    </caseValues>
+    <fields>
+        <help><!-- Program --></help>
+        <label><!-- AccountProgram ID --></label>
+        <name>AccountProgram_ID__c</name>
+        <relationshipLabel><!-- Program Region Coverage --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Actual Sales ($) --></label>
+        <name>Actual_Sales__c</name>
+    </fields>
+    <fields>
+        <help><!-- Regions --></help>
+        <label><!-- Region ID --></label>
+        <name>Region_ID__c</name>
+        <relationshipLabel><!-- Program Region Coverage --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Region Owner --></label>
+        <name>Region_Owner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Regions --></label>
+        <name>Regions__c</name>
+    </fields>
+    <fields>
+        <label><!-- SBI Score - Last Quarter --></label>
+        <name>SBI_Score_Last_Quarter__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

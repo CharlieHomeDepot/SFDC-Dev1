@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <content>Service_Program_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <allowInChatterGroups>true</allowInChatterGroups>
+    <compactLayoutAssignment>SPM_Service_Program</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>SPM_Service_Program</fullName>
+        <fields>SUMMARY_PROGRAM_NAME__c</fields>
+        <fields>MER_DEPT_NBR__c</fields>
+        <fields>MER_CLASS_NBR__c</fields>
+        <fields>MER_SUB_CLASS_NBR__c</fields>
+        <fields>MER_CLASS_DESC__c</fields>
+        <fields>MER_SUB_CLASS_DESC__c</fields>
+        <label>SPM Service Program</label>
+    </compactLayouts>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>ServicePrograms for SF&amp;I, F&amp;I and I business.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>MER_CLASS_DESC__c</fullName>
+        <description>Enter MER_CLASS_DESC</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter MER_CLASS_DESC</inlineHelpText>
+        <label>MER_CLASS_DESC</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MER_CLASS_NBR__c</fullName>
+        <description>Enter MER_CLASS_NBR</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter MER_CLASS_NBR</inlineHelpText>
+        <label>MER_CLASS_NBR</label>
+        <length>10</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MER_DEPT_NBR__c</fullName>
+        <description>Enter MER_DEPT_NBR</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter MER_DEPT_NBR</inlineHelpText>
+        <label>MER_DEPT_NBR</label>
+        <length>10</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MER_SUB_CLASS_DESC__c</fullName>
+        <description>Enter MER_SUB_CLASS_DESC</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter MER_SUB_CLASS_DESC</inlineHelpText>
+        <label>MER_SUB_CLASS_DESC</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MER_SUB_CLASS_NBR__c</fullName>
+        <description>Enter MER_SUB_CLASS_NBR</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter MER_SUB_CLASS_NBR</inlineHelpText>
+        <label>MER_SUB_CLASS_NBR</label>
+        <length>10</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SPM_Service_Program_ID__c</fullName>
+        <description>SPM Service Program ID</description>
+        <displayFormat>SPRG-{00000}</displayFormat>
+        <externalId>false</externalId>
+        <inlineHelpText>SPM Service Program ID</inlineHelpText>
+        <label>SPM Service Program ID</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>AutoNumber</type>
+    </fields>
+    <fields>
+        <fullName>SUMMARY_PROGRAM_NAME__c</fullName>
+        <description>Enter SUMMARY PROGRAM NAME</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter SUMMARY PROGRAM NAME</inlineHelpText>
+        <label>SUMMARY PROGRAM NAME</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Service Program</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>SUMMARY_PROGRAM_NAME__c</columns>
+        <columns>MER_DEPT_NBR__c</columns>
+        <columns>MER_CLASS_NBR__c</columns>
+        <columns>MER_SUB_CLASS_NBR__c</columns>
+        <columns>MER_CLASS_DESC__c</columns>
+        <columns>MER_SUB_CLASS_DESC__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>HS_Service_Programs_All_View</fullName>
+        <columns>NAME</columns>
+        <columns>SUMMARY_PROGRAM_NAME__c</columns>
+        <columns>MER_DEPT_NBR__c</columns>
+        <columns>MER_CLASS_NBR__c</columns>
+        <columns>MER_SUB_CLASS_NBR__c</columns>
+        <columns>MER_CLASS_DESC__c</columns>
+        <columns>MER_SUB_CLASS_DESC__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>HS Service Programs - All View</label>
+    </listViews>
+    <nameField>
+        <label>Service Program Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Service Programs</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>MER_SUB_CLASS_NBR__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>MER_SUB_CLASS_DESC__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>MER_DEPT_NBR__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>MER_CLASS_NBR__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>MER_CLASS_DESC__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>MER_SUB_CLASS_NBR__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>MER_SUB_CLASS_DESC__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>MER_DEPT_NBR__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>MER_CLASS_NBR__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>MER_CLASS_DESC__c</lookupDialogsAdditionalFields>
+        <lookupFilterFields>NAME</lookupFilterFields>
+        <lookupFilterFields>MER_SUB_CLASS_NBR__c</lookupFilterFields>
+        <lookupFilterFields>MER_DEPT_NBR__c</lookupFilterFields>
+        <lookupFilterFields>MER_CLASS_NBR__c</lookupFilterFields>
+        <lookupFilterFields>MER_CLASS_DESC__c</lookupFilterFields>
+        <lookupFilterFields>MER_SUB_CLASS_DESC__c</lookupFilterFields>
+        <lookupPhoneDialogsAdditionalFields>MER_SUB_CLASS_NBR__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>MER_SUB_CLASS_DESC__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>MER_DEPT_NBR__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>MER_CLASS_NBR__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>MER_CLASS_DESC__c</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchFilterFields>MER_SUB_CLASS_NBR__c</searchFilterFields>
+        <searchFilterFields>MER_DEPT_NBR__c</searchFilterFields>
+        <searchFilterFields>MER_CLASS_NBR__c</searchFilterFields>
+        <searchFilterFields>MER_CLASS_DESC__c</searchFilterFields>
+        <searchFilterFields>MER_SUB_CLASS_DESC__c</searchFilterFields>
+        <searchResultsAdditionalFields>MER_SUB_CLASS_NBR__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>MER_SUB_CLASS_DESC__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>MER_DEPT_NBR__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>MER_CLASS_NBR__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>MER_CLASS_DESC__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Private</sharingModel>
+</CustomObject>

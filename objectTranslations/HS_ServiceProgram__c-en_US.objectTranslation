@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Service Program</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Service Programs</value>
+    </caseValues>
+    <fields>
+        <help><!-- Enter MER_CLASS_DESC --></help>
+        <label><!-- MER_CLASS_DESC --></label>
+        <name>MER_CLASS_DESC__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter MER_CLASS_NBR --></help>
+        <label><!-- MER_CLASS_NBR --></label>
+        <name>MER_CLASS_NBR__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter MER_DEPT_NBR --></help>
+        <label><!-- MER_DEPT_NBR --></label>
+        <name>MER_DEPT_NBR__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter MER_SUB_CLASS_DESC --></help>
+        <label><!-- MER_SUB_CLASS_DESC --></label>
+        <name>MER_SUB_CLASS_DESC__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter MER_SUB_CLASS_NBR --></help>
+        <label><!-- MER_SUB_CLASS_NBR --></label>
+        <name>MER_SUB_CLASS_NBR__c</name>
+    </fields>
+    <fields>
+        <help><!-- SPM Service Program ID --></help>
+        <label><!-- SPM Service Program ID --></label>
+        <name>SPM_Service_Program_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter SUMMARY PROGRAM NAME --></help>
+        <label><!-- SUMMARY PROGRAM NAME --></label>
+        <name>SUMMARY_PROGRAM_NAME__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <content>Review_Coverage_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SPM_Review_Coverage_Compact_Layout</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>SPM_Review_Coverage_Compact_Layout</fullName>
+        <fields>Region_Name__c</fields>
+        <fields>Program_Name__c</fields>
+        <fields>MVendor_Name__c</fields>
+        <label>SPM Review Coverage Compact Layout</label>
+    </compactLayouts>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Review Coverage - This consists of Reviews related Account (Pvendor/MVendor id&apos;s), Regions Id, Program Id&apos;s  and can be extended to more fields as needed related Reviews.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>MVendor_ID__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>MVendor ID</description>
+        <externalId>false</externalId>
+        <inlineHelpText>MVendor ID</inlineHelpText>
+        <label>MVendor ID</label>
+        <referenceTo>SPM_PVendor_MVendor__c</referenceTo>
+        <relationshipLabel>Review Coverage</relationshipLabel>
+        <relationshipName>Review_Coverage</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>MVendor_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>MVendor_ID__r.PVendor__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>MVendor Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Program_ID__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Account Program ID</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Account Program ID</inlineHelpText>
+        <label>Program ID</label>
+        <referenceTo>SPM_Account_Program__c</referenceTo>
+        <relationshipLabel>Review Coverage</relationshipLabel>
+        <relationshipName>Review_Coverage</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Program_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Program_ID__r.Service_Program__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Program Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Region_ID__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Region ID field from Account Region Junction object</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Region ID field from Account Region Junction object</inlineHelpText>
+        <label>Region ID</label>
+        <referenceTo>SPM_Account_Regions__c</referenceTo>
+        <relationshipLabel>Review Coverage</relationshipLabel>
+        <relationshipName>Review_Coverage</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Region_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Region_ID__r.SPM_Region__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Region Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Review_ID__c</fullName>
+        <description>Review</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Review</inlineHelpText>
+        <label>Review ID</label>
+        <referenceTo>SPM_Reviews__c</referenceTo>
+        <relationshipLabel>Review Coverage</relationshipLabel>
+        <relationshipName>Review_Coverage</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <label>Review Coverage</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>RC-{00000}</displayFormat>
+        <label>Review Coverage ID</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Review Coverage</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>Region_Name__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Program_Name__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>MVendor_Name__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>Region_Name__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Program_Name__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>MVendor_Name__c</lookupDialogsAdditionalFields>
+        <lookupFilterFields>Region_Name__c</lookupFilterFields>
+        <lookupFilterFields>Program_Name__c</lookupFilterFields>
+        <lookupFilterFields>MVendor_Name__c</lookupFilterFields>
+        <lookupPhoneDialogsAdditionalFields>Region_Name__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Program_Name__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>MVendor_Name__c</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>Region_Name__c</searchFilterFields>
+        <searchFilterFields>Program_Name__c</searchFilterFields>
+        <searchFilterFields>MVendor_Name__c</searchFilterFields>
+        <searchResultsAdditionalFields>Region_Name__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Program_Name__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>MVendor_Name__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+</CustomObject>

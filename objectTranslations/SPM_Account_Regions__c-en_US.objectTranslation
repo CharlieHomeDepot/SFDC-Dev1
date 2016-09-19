@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Regions</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Regions</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account Number --></label>
+        <name>Account_Number__c</name>
+    </fields>
+    <fields>
+        <help><!-- Account --></help>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Regions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Last 4 Quarters Revenue --></help>
+        <label><!-- Actual Sales ($) --></label>
+        <name>Actual_Sales__c</name>
+    </fields>
+    <fields>
+        <label><!-- MVendor --></label>
+        <name>MVendor__c</name>
+        <relationshipLabel><!-- Regions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Region Owner - User --></help>
+        <label><!-- Region Owner --></label>
+        <name>Region_Owner__c</name>
+        <relationshipLabel><!-- Regions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Last Quarter SBI Score --></help>
+        <label><!-- SBI Score - Last Quarter --></label>
+        <name>SBI_Score_Last_Quarter__c</name>
+    </fields>
+    <fields>
+        <help><!-- SPM Region --></help>
+        <label><!-- Region --></label>
+        <name>SPM_Region__c</name>
+        <relationshipLabel><!-- Regions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Source_ActReg_ID --></label>
+        <name>Source_ActReg_ID__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- MVendor Region --></label>
+        <name>MVendor_Region</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- PVendor region --></label>
+        <name>PVendor_region</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

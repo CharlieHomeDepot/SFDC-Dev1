@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Program</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Programs</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account Number --></label>
+        <name>Account_Number__c</name>
+    </fields>
+    <fields>
+        <help><!-- Account Program --></help>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Programs --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Last 4 Quarters Revenue (based on SBI) --></help>
+        <label><!-- Actual Sales ($) --></label>
+        <name>Actual_Sales__c</name>
+    </fields>
+    <fields>
+        <label><!-- MVendor --></label>
+        <name>MVendor__c</name>
+        <relationshipLabel><!-- Programs --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Merchant User --></help>
+        <label><!-- Merchant --></label>
+        <name>Merchant__c</name>
+        <relationshipLabel><!-- Programs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Parent Account --></label>
+        <name>Parent_Account__c</name>
+    </fields>
+    <fields>
+        <help><!-- Last Quarter SBI Score --></help>
+        <label><!-- SBI Score - Last Quarter --></label>
+        <name>SBI_Score_Last_Quarter__c</name>
+    </fields>
+    <fields>
+        <help><!-- Service Program --></help>
+        <label><!-- Service Program --></label>
+        <name>Service_Program__c</name>
+        <relationshipLabel><!-- Programs --></relationshipLabel>
+    </fields>
+    <recordTypes>
+        <label><!-- MVendor Program --></label>
+        <name>MVendor_Program</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- PVendor Program --></label>
+        <name>PVendor_Program</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>
