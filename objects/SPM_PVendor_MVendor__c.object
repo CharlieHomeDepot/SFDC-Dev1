@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
     <actionOverrides>
         <actionName>Accept</actionName>
         <type>Default</type>
@@ -669,7 +669,6 @@
     <searchLayouts>
         <customTabListAdditionalFields>MVendor_Number__c</customTabListAdditionalFields>
         <customTabListAdditionalFields>MVendor_Name__c</customTabListAdditionalFields>
-        <lookupDialogsAdditionalFields xsi:nil="true"/>
         <lookupDialogsAdditionalFields>MVendor_Number__c</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>MVendor_Name__c</lookupDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>MVendor_Number__c</lookupPhoneDialogsAdditionalFields>

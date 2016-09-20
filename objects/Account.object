@@ -54,10 +54,7 @@
     </actionOverrides>
     <actionOverrides>
         <actionName>View</actionName>
-        <content>Account_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <skipRecordTypeSelect>false</skipRecordTypeSelect>
-        <type>Flexipage</type>
+        <type>Default</type>
     </actionOverrides>
     <actionOverrides>
         <actionName>ViewCustomerPortalUser</actionName>
@@ -67,7 +64,7 @@
         <actionName>WebsiteHighlightAction</actionName>
         <type>Default</type>
     </actionOverrides>
-    <compactLayoutAssignment>SPM_Compact_Layout</compactLayoutAssignment>
+    <compactLayoutAssignment>Account_Compact_Layout</compactLayoutAssignment>
     <compactLayouts>
         <fullName>Account_Compact_Layout</fullName>
         <fields>Name</fields>
@@ -1217,7 +1214,7 @@
         <searchResultsAdditionalFields>ACCOUNT.PHONE1</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
     </searchLayouts>
-    <sharingModel>Private</sharingModel>
+    <sharingModel>ReadWrite</sharingModel>
     <validationRules>
         <fullName>VR_Care_Ticket_Percent_Last_Quarter</fullName>
         <active>false</active>
