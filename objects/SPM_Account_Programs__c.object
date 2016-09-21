@@ -1,62 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
-    <actionOverrides>
-        <actionName>Accept</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>CancelEdit</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>Clone</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>Delete</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>Edit</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>Follow</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>List</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>New</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>SaveEdit</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>Tab</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>View</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <allowInChatterGroups>false</allowInChatterGroups>
-    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
-    <deploymentStatus>Deployed</deploymentStatus>
-    <description>SPM Account Programs- Covered, Growth, Capable and Removal</description>
-    <enableActivities>false</enableActivities>
-    <enableBulkApi>true</enableBulkApi>
     <enableEnhancedLookup>true</enableEnhancedLookup>
-    <enableFeeds>false</enableFeeds>
-    <enableHistory>true</enableHistory>
-    <enableReports>true</enableReports>
-    <enableSearch>true</enableSearch>
-    <enableSharing>true</enableSharing>
-    <enableStreamingApi>true</enableStreamingApi>
     <fields>
         <fullName>Account__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
@@ -129,51 +73,4 @@
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
-    <label>Program Growth Coverage</label>
-    <listViews>
-        <fullName>All</fullName>
-        <columns>Service_Program_Name__c</columns>
-        <columns>Account__c</columns>
-        <columns>Grow__c</columns>
-        <columns>Maintain__c</columns>
-        <columns>Shrink_Remove__c</columns>
-        <columns>Add__c</columns>
-        <filterScope>Everything</filterScope>
-        <label>All</label>
-        <language>en_US</language>
-    </listViews>
-    <nameField>
-        <displayFormat>AP-{00000}</displayFormat>
-        <label>Programs Covered ID</label>
-        <trackHistory>false</trackHistory>
-        <type>AutoNumber</type>
-    </nameField>
-    <pluralLabel>Program Growth Coverage</pluralLabel>
-    <searchLayouts>
-        <customTabListAdditionalFields>Service_Program_Name__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>Account__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>Grow__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>Maintain__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>Shrink_Remove__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>Add__c</customTabListAdditionalFields>
-        <lookupDialogsAdditionalFields>Service_Program_Name__c</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>Account__c</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>Grow__c</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>Maintain__c</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>Shrink_Remove__c</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>Add__c</lookupDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>Service_Program_Name__c</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>Account__c</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>Grow__c</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>Maintain__c</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>Shrink_Remove__c</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>Add__c</lookupPhoneDialogsAdditionalFields>
-        <searchResultsAdditionalFields>Service_Program_Name__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>Account__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>Grow__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>Maintain__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>Shrink_Remove__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>Add__c</searchResultsAdditionalFields>
-    </searchLayouts>
-    <sharingModel>ReadWrite</sharingModel>
 </CustomObject>

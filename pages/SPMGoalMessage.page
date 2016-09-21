@@ -1,5 +1,0 @@
-<apex:page standardcontroller="SPM_Goal__c">
-  <div id="MessageDiv" style="height:350px;">
-  <apex:outputLabel ><center>***Please refer to the most recent Services Business Index while setting SP Goals***</center></apex:outputLabel>
-   </div>
-</apex:page>
