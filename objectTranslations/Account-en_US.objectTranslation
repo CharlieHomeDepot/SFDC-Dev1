@@ -636,6 +636,10 @@
             <translation><!-- Reseller --></translation>
         </picklistValues>
     </fields>
+    <fields>
+        <label><!-- test --></label>
+        <name>test__c</name>
+    </fields>
     <recordTypes>
         <label><!-- SPM Accounts --></label>
         <name>SPM_Accounts</name>
