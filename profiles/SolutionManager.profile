@@ -332,6 +332,11 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.testext__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Asset.AccountId</field>
         <readable>true</readable>
@@ -2166,6 +2171,221 @@
         <field>Task.WhoId</field>
         <readable>true</readable>
     </fieldPermissions>
+    <layoutAssignments>
+        <layout>Account-Account Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Account-Account Layout</layout>
+        <recordType>Account.SPM_Accounts</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Asset-Asset Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Campaign-Campaign Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CampaignMember-Campaign Member Page Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-Case Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CaseClose-Close Case Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CaseInteraction-Case Feed Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CollaborationGroup-Group Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Contact-Contact Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Contact-Contact Layout</layout>
+        <recordType>Contact.SPM_Contact</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ContentVersion-Content Version</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Contract-Contract Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>DuplicateRecordSet-Duplicate Record Set Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>EmailMessage-Email Message Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Event-Event Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FeedItem-Feed Item Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Global-Global Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Goal_Action__c-Action Items Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>HS_ServiceProgram__c-HS ServiceProgram Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Idea-Idea Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Lead-Lead Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Macro-Macro Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Opportunity-Opportunity Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>OpportunityLineItem-Opportunity Product Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Order-Order Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>OrderItem-Order Product Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Pricebook2-Price Book Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>PricebookEntry-Price Book Entry Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Product2-Product Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ProfileSkill-Skill Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ProfileSkillEndorsement-Endorsement Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ProfileSkillUser-Skill User Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Quote-Quote Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>QuoteLineItem-Quote Line Item Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SPM_AccountMVendor_Program__c-MVendor Program Coverage Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SPM_AccountMVendor_Region__c-Region Coverage Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SPM_AccountProgram_Region__c-AccounttProgram_Region Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SPM_AccountRegion_Program__c-Region Program Coverage Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SPM_Account_Program__c-MVendor Program Layout</layout>
+        <recordType>SPM_Account_Program__c.MVendor_Program</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SPM_Account_Program__c-PVendor Program Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SPM_Account_Program__c-PVendor Program Layout</layout>
+        <recordType>SPM_Account_Program__c.PVendor_Program</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SPM_Account_Programs__c-Programs Covered Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SPM_Account_Regions__c-MVendor Regions Layout</layout>
+        <recordType>SPM_Account_Regions__c.MVendor_Region</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SPM_Account_Regions__c-PVendor Regions Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SPM_Account_Regions__c-PVendor Regions Layout</layout>
+        <recordType>SPM_Account_Regions__c.PVendor_region</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SPM_District__c-SPM District Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SPM_Division__c-Division Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SPM_Goal__c-SPM Goal Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SPM_PVendor_MVendor__c-MVendor Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SPM_Region__c-SPM Region Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SPM_Review_Coverage__c-Review Coverage Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SPM_Review__c-SPM Review Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SPM_Reviews__c-SPM MVendor Review Layout</layout>
+        <recordType>SPM_Reviews__c.MVendor_Review</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SPM_Reviews__c-SPM PVendor Review Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SPM_Reviews__c-SPM PVendor Review Layout</layout>
+        <recordType>SPM_Reviews__c.PVendor_Review</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SPM_Store_Coverage__c-Store Coverage Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SPM_Store__c-SPM Store Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SPM__c-SPM Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SocialPersona-Social Persona Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Solution-Solution Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Task-Task Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>User-User Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>UserAlt-User Profile Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>UserAppMenuItem-Application Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>WorkAccess-Access Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>WorkBadge-Badge Received Layout 192</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>WorkBadgeDefinition-Badge Layout 192</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>WorkThanks-Thanks Layout</layout>
+    </layoutAssignments>
     <objectPermissions>
         <allowCreate>true</allowCreate>
         <allowDelete>true</allowDelete>

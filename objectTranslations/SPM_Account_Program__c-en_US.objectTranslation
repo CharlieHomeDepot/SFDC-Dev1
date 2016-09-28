@@ -49,6 +49,20 @@
         <name>Service_Program__c</name>
         <relationshipLabel><!-- Programs --></relationshipLabel>
     </fields>
+    <layouts>
+        <layout>MVendor Program Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>PVendor Program Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
     <recordTypes>
         <label><!-- MVendor Program --></label>
         <name>MVendor_Program</name>

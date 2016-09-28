@@ -42,5 +42,12 @@
         <name>Review_Goal__c</name>
         <relationshipLabel><!-- Action Items --></relationshipLabel>
     </fields>
+    <layouts>
+        <layout>Action Items Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
     <startsWith>Consonant</startsWith>
 </CustomObjectTranslation>

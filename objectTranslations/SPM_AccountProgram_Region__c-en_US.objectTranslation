@@ -36,5 +36,12 @@
         <label><!-- SBI Score - Last Quarter --></label>
         <name>SBI_Score_Last_Quarter__c</name>
     </fields>
+    <layouts>
+        <layout>AccounttProgram_Region Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
     <startsWith>Consonant</startsWith>
 </CustomObjectTranslation>

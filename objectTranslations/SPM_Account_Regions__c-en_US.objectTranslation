@@ -49,6 +49,20 @@
         <label><!-- Source_ActReg_ID --></label>
         <name>Source_ActReg_ID__c</name>
     </fields>
+    <layouts>
+        <layout>MVendor Regions Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>PVendor Regions Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
     <recordTypes>
         <label><!-- MVendor Region --></label>
         <name>MVendor_Region</name>

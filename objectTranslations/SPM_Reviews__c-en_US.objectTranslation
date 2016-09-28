@@ -255,6 +255,28 @@
             <translation><!-- 2027 --></translation>
         </picklistValues>
     </fields>
+    <layouts>
+        <layout>SPM MVendor Review Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Performance Summary --></label>
+            <section>Performance Summary</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>SPM PVendor Review Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Performance Summary --></label>
+            <section>Performance Summary</section>
+        </sections>
+    </layouts>
     <recordTypes>
         <label><!-- MVendor Review --></label>
         <name>MVendor_Review</name>

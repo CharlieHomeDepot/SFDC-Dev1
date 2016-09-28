@@ -640,6 +640,52 @@
         <label><!-- test --></label>
         <name>test__c</name>
     </fields>
+    <fields>
+        <label><!-- testext --></label>
+        <name>testext__c</name>
+    </fields>
+    <layouts>
+        <layout>Account Layout</layout>
+        <sections>
+            <label><!-- Account Compliance --></label>
+            <section>Account Compliance</section>
+        </sections>
+        <sections>
+            <label><!-- Account Risk --></label>
+            <section>Account Risk</section>
+        </sections>
+        <sections>
+            <label><!-- General Information --></label>
+            <section>General Information</section>
+        </sections>
+        <sections>
+            <label><!-- Performance Summary --></label>
+            <section>Performance Summary</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>SPM Account Layout</layout>
+        <sections>
+            <label><!-- Account Compliance --></label>
+            <section>Account Compliance</section>
+        </sections>
+        <sections>
+            <label><!-- Account Risk --></label>
+            <section>Account Risk</section>
+        </sections>
+        <sections>
+            <label><!-- General Information --></label>
+            <section>General Information</section>
+        </sections>
+        <sections>
+            <label><!-- Performance Summary --></label>
+            <section>Performance Summary</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Child Account --></label>
+        <name>Child_Account</name>
+    </quickActions>
     <recordTypes>
         <label><!-- SPM Accounts --></label>
         <name>SPM_Accounts</name>

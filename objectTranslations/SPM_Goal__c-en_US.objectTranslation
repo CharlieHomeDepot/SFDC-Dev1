@@ -99,5 +99,16 @@
         <name>Review_Name__c</name>
         <relationshipLabel><!-- Review Goals --></relationshipLabel>
     </fields>
+    <layouts>
+        <layout>SPM Goal Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Message --></label>
+            <section>Message</section>
+        </sections>
+    </layouts>
     <startsWith>Consonant</startsWith>
 </CustomObjectTranslation>

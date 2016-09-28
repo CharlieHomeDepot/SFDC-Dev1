@@ -246,5 +246,39 @@
         <label><!-- Type --></label>
         <name>Type__c</name>
     </fields>
+    <layouts>
+        <layout>MVendor Layout</layout>
+        <sections>
+            <label><!-- Account Compliance --></label>
+            <section>Account Compliance</section>
+        </sections>
+        <sections>
+            <label><!-- Account Risk --></label>
+            <section>Account Risk</section>
+        </sections>
+        <sections>
+            <label><!-- Additional Information --></label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- General Information --></label>
+            <section>General Information</section>
+        </sections>
+        <sections>
+            <label><!-- Performance Summary --></label>
+            <section>Performance Summary</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Test MVendor Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
     <startsWith>Consonant</startsWith>
 </CustomObjectTranslation>

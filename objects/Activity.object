@@ -53,7 +53,7 @@
     <listViews>
         <fullName>MyTeamsActivities</fullName>
         <filterScope>Team</filterScope>
-        <label>My Team&apos;s Activities</label>
+        <label>My Team's Activities</label>
     </listViews>
     <listViews>
         <fullName>TodaysTasks</fullName>
@@ -73,7 +73,7 @@
             <operation>lessThan</operation>
             <value>TOMORROW</value>
         </filters>
-        <label>Today&apos;s Tasks</label>
+        <label>Today's Tasks</label>
     </listViews>
     <listViews>
         <fullName>UpcomingEvents</fullName>
