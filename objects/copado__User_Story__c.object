@@ -1,5 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
     <fields>
         <fullName>copado__Acceptance_Criteria_Status__c</fullName>
         <deprecated>false</deprecated>
@@ -797,4 +841,145 @@
         <trackTrending>false</trackTrending>
         <type>TextArea</type>
     </fields>
+    <listViews>
+        <fullName>copado__All</fullName>
+        <columns>NAME</columns>
+        <columns>copado__User_Story_Title__c</columns>
+        <columns>copado__userStory_Role__c</columns>
+        <columns>copado__userStory_need__c</columns>
+        <columns>copado__userStory_reason__c</columns>
+        <columns>copado__Story_Points_SFDC__c</columns>
+        <columns>copado__Story_Points_Other__c</columns>
+        <columns>copado__Status__c</columns>
+        <columns>copado__Project__c</columns>
+        <columns>copado__Epic__c</columns>
+        <columns>copado__Sprint__c</columns>
+        <columns>copado__Release__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <validationRules>
+        <fullName>copado__Cancellation_reason_required</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+  TEXT(copado__Status__c)==&quot;Cancelled&quot;,
+  ISBLANK(copado__Cancellation_Reason__c)
+)</errorConditionFormula>
+        <errorDisplayField>copado__Cancellation_Reason__c</errorDisplayField>
+        <errorMessage>A cancellation reason must be given.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>copado__Promote_User_Story_Apex_validation</fullName>
+        <active>true</active>
+        <description>If User Story has apex code, validate that the minimum code coverage has been met.</description>
+        <errorConditionFormula>AND(
+  copado__Has_Apex_Code__c = true,
+  PRIORVALUE(copado__Promote_Change__c) = false, 
+  copado__Promote_Change__c = true,
+  OR(
+    ISNULL(copado__Apex_Code_Coverage__c),
+    ISNULL(copado__Minimum_Apex_Code_Coverage__c),
+    copado__Apex_Code_Coverage__c &lt; copado__Minimum_Apex_Code_Coverage__c
+  )
+)</errorConditionFormula>
+        <errorMessage>This User Story does not meet the required Apex coverage threshold to be promoted.</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>copado__Add_Apex_Tests</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Add Apex Tests</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>/apex/{!$Setup.copado__Settings__c.copado__Namespace__c}metadataselector?id={!copado__User_Story__c.Id}&amp;mode=ApexTests</url>
+    </webLinks>
+    <webLinks>
+        <fullName>copado__Add_Commits</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>600</height>
+        <linkType>url</linkType>
+        <masterLabel>Add Commits</masterLabel>
+        <openType>sidebar</openType>
+        <protected>false</protected>
+        <url>/apex/{!IF($Setup.copado__Settings__c.copado__Namespace__c=&apos;none&apos;,&apos;&apos;,if(isblank($Setup.copado__Settings__c.copado__Namespace__c),&apos;copado__&apos;,$Setup.copado__Settings__c.copado__Namespace__c))}UserStoryCommitIntermediary?Id={!copado__User_Story__c.Id}&amp;targetPage=UserStorySelectCommits</url>
+    </webLinks>
+    <webLinks>
+        <fullName>copado__Add_Metadata</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Add Metadata</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>/apex/{!if($Setup.copado__Settings__c.copado__Namespace__c =&apos;none&apos;,&apos;&apos;,&apos;copado__&apos;)}metadataselector?id={!copado__User_Story__c.Id}&amp;mode=MetaData</url>
+    </webLinks>
+    <webLinks>
+        <fullName>copado__Assign_to_Release</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>Assign to Release</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>/apex/{!if($Setup.copado__Settings__c.copado__Namespace__c =&apos;none&apos;,&apos;&apos;,&apos;copado__&apos;)}UserStoryAssignment</url>
+    </webLinks>
+    <webLinks>
+        <fullName>copado__Commit_Files</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>Commit Files</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <url>/apex/{!IF($Setup.copado__Settings__c.copado__Namespace__c=&apos;none&apos;,&apos;&apos;,if(isblank($Setup.copado__Settings__c.copado__Namespace__c),&apos;copado__&apos;,$Setup.copado__Settings__c.copado__Namespace__c))}UserStoryCommitIntermediary?Id={!copado__User_Story__c.Id}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>copado__Mass_Add_User_Stories</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>Mass Add User Stories</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>false</requireRowSelection>
+        <url>/apex/{!if($Setup.copado__Settings__c.copado__Namespace__c =&apos;none&apos;,&apos;&apos;,&apos;copado__&apos;)}QuickCreateUserStories?pid={!copado__Project__c.Id}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>copado__Mass_Add_User_Stories_Sprint</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>Mass Add User Stories</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>false</requireRowSelection>
+        <url>/apex/{!if($Setup.copado__Settings__c.copado__Namespace__c =&apos;none&apos;,&apos;&apos;,&apos;copado__&apos;)}QuickCreateUserStories?sid={!copado__Sprint__c.Id}</url>
+    </webLinks>
 </CustomObject>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Program Growth Coverage</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Program Growth Coverage</value>
+    </caseValues>
+    <fields>
+        <help><!-- Account --></help>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Program Growth Coverage --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Additional Capable Program --></help>
+        <label><!-- Add --></label>
+        <name>Add__c</name>
+    </fields>
+    <fields>
+        <help><!-- Grow --></help>
+        <label><!-- Grow --></label>
+        <name>Grow__c</name>
+    </fields>
+    <fields>
+        <help><!-- Maintain --></help>
+        <label><!-- Maintain --></label>
+        <name>Maintain__c</name>
+    </fields>
+    <fields>
+        <help><!-- ServiceProgram --></help>
+        <label><!-- Service Program Name --></label>
+        <name>Service_Program_Name__c</name>
+        <relationshipLabel><!-- Program Growth Coverage --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Program for Shrink/Remove --></help>
+        <label><!-- Shrink / Remove --></label>
+        <name>Shrink_Remove__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>
