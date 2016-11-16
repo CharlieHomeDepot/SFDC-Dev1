@@ -1,8 +1,34 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
+<script type="text/javascript">
+jQuery(document).ready(function() {
+
+var callnumber = '18441231234'; //Number for click to call
+var textnumber = '18441231234'; //Number for click to text
+
+jQuery('body').append('<div class="mob_button"><a class="hw_mobile_call" href="tel+'+callnumber+'"><i class="fa fa-phone"></i>Call</a><span></span><a class="hw_mobile_text" href="sms://'+textnumber+'"><i class="fa fa-phone"></i>Text</a></div>');
+});
+</script>
+<!-- adds phone icons to buttons-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+<style>
+/* hide buttons by default */
+.mob_button {display:none;}
+/* show on mobile only, adjust max with to change crossover point */
+@media only screen and (max-width: 900px) {
+     .mob_button {display: inline-block; margin:auto; position:fixed; bottom:0; background-color:#56a0d3; padding: 20px 15px; border-top-left-radius: 5px; border-top-right-radius: 5px; z-index:500; text-align:center; width: 275px; left:0; right:0;}
+	 .mob_button .button:hover { background-color: transparent !important; }
+	 .mob_button .button{text-align:center; color:#fff; font-weight: bold; display:inline-block; width:40%; font-size: 19px; }
+	 .mob_button a:nth-of-type(1){margin-right:30px;}
+	 .mob_button a:nth-of-type(2){margin-left: 30px;}
+	 .mob_button span{border-left: 1.5px solid #fff; height:100%;  }
+	 .mob_button .fa-phone, .mob_button .fa-mobile{margin-right:7px;}
+}
+</style>
     <meta charset="UTF-8">
-    <title>Sfdc-dev1 by CharlieHomeDepot</title>
+    <title>Pro Referral Test</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
@@ -11,8 +37,7 @@
   </head>
   <body>
     <section class="page-header">
-      <h1 class="project-name">Sfdc-dev1</h1>
-      <h2 class="project-tagline">Test</h2>
+      <h1 class="project-name">Pro Referral</h1>
       <a href="https://github.com/CharlieHomeDepot/SFDC-Dev1" class="btn">View on GitHub</a>
       <a href="https://github.com/CharlieHomeDepot/SFDC-Dev1/zipball/master" class="btn">Download .zip</a>
       <a href="https://github.com/CharlieHomeDepot/SFDC-Dev1/tarball/master" class="btn">Download .tar.gz</a>
