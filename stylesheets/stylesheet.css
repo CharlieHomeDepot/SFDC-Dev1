@@ -56,7 +56,7 @@ a {
 .page-header {
   color: #fff;
   text-align: center;
-  background-image: 'https://www.proreferral.com/media/homepage/images/pro_help_center/why-hero.jpg'; }
+  background-image: URL("https://www.proreferral.com/media/homepage/images/pro_help_center/why-hero.jpg"); }
 
 @media screen and (min-width: 64em) {
   .page-header {
