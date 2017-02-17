@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box; 
-  background-color: #EBE8E3; }
+  background-color: #333; }
 
 body {
   padding: 0;
@@ -8,7 +8,7 @@ body {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  color: #606c71; }
+  color: #f3f6fa; }
 
 a {
   color: #fff;
