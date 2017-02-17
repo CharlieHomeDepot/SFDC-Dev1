@@ -59,7 +59,10 @@ a {
   text-align: center; }
 
 .page-header-image{
-background-image: URL("https://www.proreferral.com/media/common/base/images/logo-inverse.svg"); 
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
 }
 
 @media screen and (min-width: 64em) {
