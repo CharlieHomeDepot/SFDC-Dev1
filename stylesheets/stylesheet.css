@@ -229,8 +229,7 @@ a {
 .site-footer {
   padding-top: 2rem;
   margin-top: 2rem;
-  border-top: solid 1px #eff0f1;
-  background-image: URL("https://www.proreferral.com/media/homepage/images/pro_help_center/why-hero.jpg");  }
+  border-top: solid 1px #eff0f1;  }
 
 .site-footer-owner {
   display: block;
