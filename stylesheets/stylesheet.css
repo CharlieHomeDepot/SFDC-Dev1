@@ -58,6 +58,10 @@ a {
   color: #e6690a;
   text-align: center; }
 
+.page-header-image{
+background-image: URL("https://www.proreferral.com/media/common/base/images/logo-inverse.svg"); 
+}
+
 @media screen and (min-width: 64em) {
   .page-header {
     padding: 5rem 6rem; } }
